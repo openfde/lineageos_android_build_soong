@@ -785,9 +785,7 @@ func SourceAbiDiff(ctx android.ModuleContext, inputDump android.Path, referenceD
 	createReferenceDumpFlags := ""
 
 	localAbiCheckAllowFlags := append([]string(nil), abiCheckAllowFlags...)
-	if exportedHeaderFlags == "" {
-		localAbiCheckAllowFlags = append(localAbiCheckAllowFlags, "-advice-only")
-	}
+	localAbiCheckAllowFlags = append(localAbiCheckAllowFlags, "-advice-only")
 	if isLlndk || isNdk {
 		createReferenceDumpFlags = "--llndk"
 		if isLlndk {

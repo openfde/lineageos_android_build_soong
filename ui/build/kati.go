@@ -108,6 +108,7 @@ func runKati(ctx Context, config Config, extraSuffix string, args []string, envF
 		if err != nil {
 			ctx.Println("Failed to get current user")
 		}
+		u.Username = "OpenFDE"
 		cmd.Environment.Set("BUILD_USERNAME", u.Username)
 	}
 

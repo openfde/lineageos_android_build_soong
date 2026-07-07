@@ -60,6 +60,7 @@ var allowedPluginsByName = map[string]bool{
 	"soong-java-config-error_prone":          true,
 	"soong-libchrome":                        true,
 	"soong-llvm":                             true,
+	"soong-llvm22":                           true,
 	"soong-noto-fonts":                       true,
 	"soong-robolectric":                      true,
 	"soong-sdv_binary_pdk":                   true,

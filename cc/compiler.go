@@ -334,6 +334,8 @@ func parseCStd(cStdPtr *string) string {
 		return config.CStdVersion
 	case "experimental":
 		return config.ExperimentalCStdVersion
+	case "libglibc-adapter":
+		return config.ExperimentalCStdVersion
 	default:
 		return cStd
 	}
